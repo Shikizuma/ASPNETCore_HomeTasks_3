@@ -1,0 +1,20 @@
+﻿
+@model List<Task5.Models.ProductModel>
+
+@foreach (var product in Model)
+{
+    <p>@product.Id: @product.Name, @product.Price</p>
+}
+
+@if (Model.Count != 0)
+{
+    <p>
+        Всего: @Model.Count
+    </p>
+}
+else
+{
+    <p>
+        Список порожній.
+    </p>
+}
